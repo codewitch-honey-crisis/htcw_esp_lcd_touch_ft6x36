@@ -308,13 +308,6 @@ static esp_err_t touch_ft6x36_init(esp_lcd_touch_handle_t tp)
         }
     }
 
-    /* Check if the values are valid */
-    if (vend_id != FT62XX_VENDID)
-    {
-        ESP_LOGE(TAG, "Invalid vendor ID: 0x%02X", vend_id);
-        return ESP_FAIL;
-    }
-
     /* Check if the chip ID is supported */
     if (chip_id != FT6206_CHIPID && chip_id != FT6236_CHIPID && chip_id != FT6236U_CHIPID && chip_id != FT6336U_CHIPID && chip_id != FT3236_CHIPID)
     {

@@ -1,6 +1,6 @@
 {
     "name": "htcw_esp_lcd_touch_ft6x36",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "The FT6x36 touch component from the espressif registry packaged for PIO",
     "keywords": ["touch","input"],
     "authors": {
