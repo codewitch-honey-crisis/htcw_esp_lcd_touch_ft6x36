@@ -1,0 +1,9 @@
+version: "0.1.3"
+description: "Provides FT6x36 touch panel interfacing code"
+dependencies:
+  esp_lcd_touch:
+    public: true
+    version: ^1.0.4
+  idf:
+    version: ">=5.0.0"
+  

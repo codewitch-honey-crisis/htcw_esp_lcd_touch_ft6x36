@@ -309,7 +309,7 @@ static esp_err_t touch_ft6x36_init(esp_lcd_touch_handle_t tp)
     }
 
     /* Check if the chip ID is supported */
-    if (chip_id != FT6206_CHIPID && chip_id != FT6236_CHIPID && chip_id != FT6236U_CHIPID && chip_id != FT6336U_CHIPID && chip_id != FT3236_CHIPID)
+    if (chip_id!=0 && chip_id != FT6206_CHIPID && chip_id != FT6236_CHIPID && chip_id != FT6236U_CHIPID && chip_id != FT6336U_CHIPID && chip_id != FT3236_CHIPID)
     {
         ESP_LOGE(TAG, "Unsupported chip ID: 0x%02X", chip_id);
         return ESP_FAIL;
